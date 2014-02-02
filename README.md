@@ -3,4 +3,4 @@ DesignPatterns
 
 DesignPatterns Snippets in iOS
 
-Singleton
+Singleton - using GCD
