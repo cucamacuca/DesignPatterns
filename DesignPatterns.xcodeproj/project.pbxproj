@@ -18,7 +18,8 @@
 		88F5302E189D91920082B543 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F53013189D91920082B543 /* Foundation.framework */; };
 		88F5302F189D91920082B543 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F53017189D91920082B543 /* UIKit.framework */; };
 		88F53037189D91920082B543 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F53035189D91920082B543 /* InfoPlist.strings */; };
-		88F53039189D91920082B543 /* DesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F53038189D91920082B543 /* DesignPatternsTests.m */; };
+		88F53045189E84F00082B543 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F53044189E84F00082B543 /* Singleton.m */; };
+		88F53048189EE2FF0082B543 /* SingletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F53047189EE2FF0082B543 /* SingletonTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,9 @@
 		88F5302C189D91920082B543 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		88F53034189D91920082B543 /* DesignPatternsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesignPatternsTests-Info.plist"; sourceTree = "<group>"; };
 		88F53036189D91920082B543 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88F53038189D91920082B543 /* DesignPatternsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsTests.m; sourceTree = "<group>"; };
+		88F53043189E84F00082B543 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		88F53044189E84F00082B543 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		88F53047189EE2FF0082B543 /* SingletonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		88F53019189D91920082B543 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				88F53042189E84C80082B543 /* Singleton */,
 				88F53022189D91920082B543 /* spAppDelegate.h */,
 				88F53023189D91920082B543 /* spAppDelegate.m */,
 				88F53025189D91920082B543 /* Images.xcassets */,
@@ -129,7 +133,7 @@
 		88F53032189D91920082B543 /* DesignPatternsTests */ = {
 			isa = PBXGroup;
 			children = (
-				88F53038189D91920082B543 /* DesignPatternsTests.m */,
+				88F53046189EE2D40082B543 /* Singleton */,
 				88F53033189D91920082B543 /* Supporting Files */,
 			);
 			path = DesignPatternsTests;
@@ -142,6 +146,23 @@
 				88F53035189D91920082B543 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F53042189E84C80082B543 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				88F53043189E84F00082B543 /* Singleton.h */,
+				88F53044189E84F00082B543 /* Singleton.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		88F53046189EE2D40082B543 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				88F53047189EE2FF0082B543 /* SingletonTest.m */,
+			);
+			name = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F53045189E84F00082B543 /* Singleton.m in Sources */,
 				88F53020189D91920082B543 /* main.m in Sources */,
 				88F53024189D91920082B543 /* spAppDelegate.m in Sources */,
 			);
@@ -249,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F53039189D91920082B543 /* DesignPatternsTests.m in Sources */,
+				88F53048189EE2FF0082B543 /* SingletonTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +464,7 @@
 				88F5303E189D91920082B543 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88F5303F189D91920082B543 /* Build configuration list for PBXNativeTarget "DesignPatternsTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +473,7 @@
 				88F53041189D91920082B543 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
